@@ -26,10 +26,5 @@
     "immodel": "git://github.com/immodel/immodel",
     "immodel-base": "git://github.com/immodel/base",
     "mocha": "^2.2.0"
-  },
-  "dependencies": {
-    "immodel": "file:../../../../tmp/npm-24312-087d2511/git-cache-c23e4b284790/4b8a3209dabae743ff68e08ef804fb195c37f2f6",
-    "immodel-base": "file:../../../../tmp/npm-24312-087d2511/git-cache-922d4c96bfaa/fa09f6abc134094b64987344fa5f9f6e0b0a9fbc",
-    "immodel-enum": "file:../../../../tmp/npm-24312-087d2511/git-cache-b0c41a210270/7a6c38646c933f8baae2dde19909b60e5b3d48a0"
   }
 }
