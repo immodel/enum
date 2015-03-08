@@ -1,6 +1,6 @@
 {
   "name": "immodel-enum",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Add enum validation to immodel",
   "main": "index.js",
   "scripts": {
