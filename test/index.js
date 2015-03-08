@@ -10,9 +10,14 @@ describe('enum', function() {
     var user = new User({username: 'test'});
     
     user.validate(function(err) {
-      assert(! err);
+      assert(err);
       assert(err[0].key === 'enum');
-      done();
+      
+      user.set('username', 'admin');
+      user.validate(function(err) {
+        assert(! err);
+        done();
+      });
     });
   });
 });
