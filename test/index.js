@@ -6,15 +6,15 @@ describe('enum', function() {
   it('should work', function(done) {
     var User = model
       .attr('username', {type: 'string', enum: ['admin', 'guest']});
-    
+
     var user = new User({username: 'test'});
-    
-    user.validate(function(err) {
+
+    user.validate(function(err, user) {
       assert(err);
-      assert(err[0].key === 'enum');
-      
-      user.set('username', 'admin');
-      user.validate(function(err) {
+      assert(err.key === 'enum');
+      user
+        .set('username', 'admin')
+        .validate(function(err, user) {
         assert(! err);
         done();
       });
